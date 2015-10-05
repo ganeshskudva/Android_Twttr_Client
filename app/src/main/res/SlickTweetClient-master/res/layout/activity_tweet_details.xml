@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context="com.codepath.apps.basictwitter.TweetActivity" >
+
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:layout_toRightOf="@+id/ivUserImage" />
+
+    <TextView
+        android:id="@+id/tvUserScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivUserImage"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/foo_label"
+        android:layout_below="@id/tvUserName" />
+    
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivUserImage"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:text="This is my last tweet"
+        android:typeface="sans"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvTweetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTweet"
+        android:layout_below="@+id/tvTweet"
+        android:text="11:43 AM.25 Jun 14"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

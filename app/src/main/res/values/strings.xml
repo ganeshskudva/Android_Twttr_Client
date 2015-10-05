@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Twttr</string>
+    <string name="login_label">Log in</string>
+    <string name="title_activity_time_line">Twttr</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_twttr_detail">TwttrDetailActivity</string>
+    <string name="compose">Create Tweet</string>
+    <string name="cancel">CANCEL</string>
+    <string name="tweet">TWEET</string>
+    <string name="tweet_char_cnt">chars left</string>
+    <string name="retweet">RETWEET</string>
+    <string name="favorite">FAVORITE</string>
+
+</resources>

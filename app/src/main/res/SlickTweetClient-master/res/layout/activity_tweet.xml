@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context="com.codepath.apps.basictwitter.TweetActivity" >
+
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:layout_toRightOf="@+id/ivUserImage" />
+
+    <TextView
+        android:id="@+id/tvUserScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivUserImage"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/foo_label"
+        android:layout_below="@id/tvUserName" />
+
+    <EditText
+        android:id="@+id/etUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivUserImage"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="What's happening?"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

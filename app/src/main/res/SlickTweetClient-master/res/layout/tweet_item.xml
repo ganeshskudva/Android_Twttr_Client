@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:paddingTop="20dp" >
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/lltweetHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/ivProfileImage" >
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/tvScreenName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/foo_label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:clickable="false"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:singleLine="true"
+            android:text="@string/dummy_time" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lltweetHeader"
+        android:layout_below="@+id/lltweetHeader"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:typeface="sans"
+        android:text="@string/tweet_body" />
+
+    <RelativeLayout
+        android:id="@+id/rlTweetActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBody"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivReply"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:src="@drawable/ic_image_reply" />
+        
+        <TextView
+            android:id="@+id/tvRetweetCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:text="5" />
+
+        <ImageView
+            android:id="@+id/ivRetweet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tvRetweetCounter"
+            android:clickable="false"
+            android:src="@drawable/ic_image_retweet" />
+
+        <TextView
+            android:id="@+id/tvStarCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:clickable="false"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/ivReply"
+            android:layout_toLeftOf="@id/tvStarCounter"
+            android:clickable="false"
+            android:src="@drawable/ic_image_star" />
+    </RelativeLayout>
+
+</RelativeLayout>

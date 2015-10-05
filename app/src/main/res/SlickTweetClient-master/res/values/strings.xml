@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Basic Twitter</string>
+    <string name="timeline_activity_label">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_photos">Flickr Photos</string>
+    <string name="login_label">Connect To Twitter</string>
+    <string name="title_activity_twitter_timeline">TwitterTimelineActivity</string>
+    <string name="foo_label">foo</string>
+    <string name="tweet_body">Tweet Body</string>
+    <string name="compose">Compose</string>
+    <string name="title_activity_tweet">TweetActivity</string>
+    <string name="dummy_time">22m</string>
+    <string name="title_activity_tweet_details">Tweet</string>
+    <string name="profile_view_title">Profile</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+</resources>
