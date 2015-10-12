@@ -1,7 +1,7 @@
 ##Android Twitter Client
 ## Codepath Android Bootcamp:Twitter Client with Fragments
 
-Time Spent: 22hrs
+Time Spent: 25hrs
 
 ###Walkthrough
 ![Twitter Client](TwttrClientFragment.gif)
