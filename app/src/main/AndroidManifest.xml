@@ -53,6 +53,10 @@
             android:name="com.codepath.apps.TwttrClient.TwttrDetailActivity"
             android:label="@string/title_activity_twttr_detail" >
         </activity>
+        <activity
+            android:name="com.codepath.apps.TwttrClient.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
     </application>
 
 </manifest>

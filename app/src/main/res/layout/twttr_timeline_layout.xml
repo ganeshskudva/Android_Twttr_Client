@@ -12,7 +12,9 @@
         android:id="@+id/ivProfile_pic"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:clickable="false"/>
+        android:onClick="onProfileView"
+        android:tag="@string/screen_name"
+        android:clickable="true"/>
 
     <LinearLayout
         android:id="@+id/lltweetHeader"

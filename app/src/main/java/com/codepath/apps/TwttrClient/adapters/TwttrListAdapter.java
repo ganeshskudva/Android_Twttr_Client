@@ -51,6 +51,7 @@ public class TwttrListAdapter extends ArrayAdapter {
         TextView Fav_cnt = (TextView) convertView.findViewById(R.id.tvStarCounter);
     //    ImageView Media_pic = (ImageView) convertView.findViewById(R.id.ivMedia_pic);
 
+        Profile_pic.setTag(model.getScreen_name());
         Profile_pic.setImageResource(0);
         Picasso.with(getContext())
                 .load(model.getImg_url())
@@ -100,4 +101,6 @@ public class TwttrListAdapter extends ArrayAdapter {
 
         return relativeDate;
     }
+
+
 }
